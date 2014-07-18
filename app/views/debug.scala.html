@@ -1,0 +1,17 @@
+@(prints: Map[String, String])
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Debug</title>
+    </head>
+    <body>
+        <dl>
+        @for((key, value) <- prints) {
+          <dt>@key</dt>
+          <dd>@value</dd>
+        }
+        </dl>
+    </body>
+</html>

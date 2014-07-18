@@ -1,0 +1,3 @@
+42000:io.yard.core.CorePlugin
+42001:io.yard.jira.JiraPlugin
+42002:io.yard.zik.ZikPlugin
