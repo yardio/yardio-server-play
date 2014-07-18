@@ -8,6 +8,6 @@ object Global extends GlobalSettings {
 
   override def onRouteRequest(req: RequestHeader): Option[Handler] = (req.method, req.path) match {
     case ("GET", "/debug") => Option(Debug.display)
-    case _ => Option(io.yard.core.controllers.yardioController.applyRoute(req, default))
+    case _ => Option(io.yard.module.core.controllers.YardioController.applyRoute(req, default))
   }
 }

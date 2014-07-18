@@ -1,3 +1,20 @@
-42000:io.yard.core.CorePlugin
-42001:io.yard.jira.JiraPlugin
-42002:io.yard.zik.ZikPlugin
+################################################
+# Connectors
+############
+
+42000:io.yard.connector.config.ConfigConnectorPlugin
+
+
+################################################
+# Providers
+###########
+
+43000:io.yard.provider.slack.SlackPlugin
+
+################################################
+# Modules
+#########
+
+44000:io.yard.module.core.CorePlugin
+44001:io.yard.module.jira.JiraPlugin
+# 44002:io.yard.module.zik.ZikPlugin

@@ -6,11 +6,11 @@ import play.api.libs.json._
 import play.api.libs.functional.syntax._
 
 
-object Debug extends Controller with io.yard.core.utils.Config {
+object Debug extends Controller {
 
   def display = Action {
     val prints = Map(
-      "slack.team.name" -> slack.team.name
+      "None" -> "nope"
     )
 
     Ok(views.html.debug(prints))
